@@ -1,0 +1,101 @@
+// Place all the styles related to the Carousel controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.main-container {
+  padding: 10px 15px;
+}
+
+body {
+  background-color: white;
+
+
+// added to have a max height for sliders
+.carousel-inner{
+  max-height: 700px;
+}
+
+}
+.logo {
+  align: left;
+  width: 400px;
+}
+
+.slide-photo {
+  align: center;
+  width: 400px;
+}
+
+.carousel-indicators {
+  bottom: 0;
+}
+.carousel-control.right,
+.carousel-control.left {
+  background-image: none;
+}
+.carousel .item {
+  min-height: 350px; 
+  height: 100%;
+  width:100%; 
+}
+.carousel-caption h3,
+.carousel .icon-container,
+.carousel-caption button {
+  background-color: #09c;
+}
+.carousel-caption h3 {
+  padding: .5em;
+}
+.carousel .icon-container {
+  display: inline-block;
+  font-size: 25px;
+  line-height: 25px;
+  padding: 1em;
+  text-align: center;
+  border-radius: 50%;
+}
+
+/* Animation delays */
+.carousel-caption h3:first-child {
+  animation-delay: 1s;
+}
+.carousel-caption h3:nth-child(2) {
+  animation-delay: 2s;
+}
+.carousel-caption button {
+  animation-delay: 3s;
+}
+
+h1 {
+  text-align: center;  
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.p {
+  padding-top: 125px;
+  text-align: center;
+}
+
+.p a {
+  text-decoration: underline;
+}
+
+
+@-webkit-keyframes bounceInUp {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.5, 0.610, 0.355, 1.000);
+  }
+}
+  @keyframes bounceInUp {
+  0%, 60%, 75%, 90%, 100% {
+    -webkit-animation-timing-function: cubic-bezier(0.5, 0.610, 0.355, 1.000);
+    animation-timing-function: cubic-bezier(0.5, 0.610, 0.355, 1.000);
+  }
+}
+  .bounceInUp {
+  -webkit-animation-name: bounceInUp;
+  animation-name: bounceInUp;
+}
