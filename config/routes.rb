@@ -6,4 +6,8 @@ Rails.application.routes.draw do
 
  get '/animals', to: 'animals#index'
 
+ get '/nature', to: 'nature#index'
+
+ get '/weddings', to: 'weddings#index'
+ 
 end
