@@ -1,3 +1,16 @@
+  <head>
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+       <!-- Latest compiled and minified CSS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+  
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+  </head>
+
 
   <nav class="navbar navbar-default">
   <div class="container-fluid">
@@ -9,19 +22,22 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <img class="logo" src="assets/Linda_Padian_Logo.jpg">
+
+      <%=link_to image_tag('Rustic_Pony_Logo.jpg', :class => "logo"), root_path%>
+      
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="about/index.html">About</a></li>
+        <li><%= link_to "About", about_path %></li>
+        <!-- <li><a href="about/index.html">About</a></li> -->
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Photography <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Animals</a></li>
-            <li><a href="#">Landscapes</a></li>
-            <li><a href="#">People</a></li>
+            <li><%= link_to "Behind the Barn", animals_path %></li>
+            <li><a href="#">In the Pasture</a></li>
+            <li><a href="#">At the Hitching Post</a></li>
           </ul>
         </li>
         <li><a href="#">Contact</a></li>

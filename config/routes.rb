@@ -2,8 +2,8 @@ Rails.application.routes.draw do
 
  root :to => "welcome#index"
 
- resources :about, only: [:index]
+ get '/about', to: 'about#about'
 
- # get '/about', to: 'about#index'
+ get '/animals', to: 'animals#index'
 
 end

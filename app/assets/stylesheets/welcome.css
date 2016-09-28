@@ -21,6 +21,10 @@ body {
   width: 400px;
 }
 
+.navbar {
+  color: #FFFFFF;
+}
+
 .slide-photo {
   align: center;
   width: 400px;
