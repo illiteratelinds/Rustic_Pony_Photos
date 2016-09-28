@@ -9,5 +9,7 @@ Rails.application.routes.draw do
  get '/nature', to: 'nature#index'
 
  get '/weddings', to: 'weddings#index'
- 
+
+ get 'contact', to: 'contact#index'
+
 end
