@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
- root :to => "welcome#index"
+ root to: 'welcome#index'
 
  get '/about', to: 'about#about'
 
@@ -11,5 +11,7 @@ Rails.application.routes.draw do
  get '/weddings', to: 'weddings#index'
 
  get 'contact', to: 'contact#index'
+
+ resources :photos, only: [:new, :create, :index, :destroy]
 
 end
