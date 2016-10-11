@@ -9,6 +9,14 @@
     <%= f.label :title %>
     <%= f.text_field :title, class: 'form-control' %>
   </div>
+  <div class="form-group">
+    <%= f.radio_button :album, 'animals'%>
+    <%= f.label :album, 'Behind the Barn', class: 'form-control' %>
+    <%= f.radio_button :album, 'nature'%>
+    <%= f.label :album, 'In the Pasture', class: 'form-control' %>
+    <%= f.radio_button :album, 'weddings'%>
+    <%= f.label :album, 'At the Hitching Post', class: 'form-control' %>
+  </div>
 
   <div class="form-group">
     <%= f.label :image %>
