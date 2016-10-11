@@ -10,7 +10,9 @@ Rails.application.routes.draw do
 
  get '/weddings', to: 'weddings#index'
 
- get 'contact', to: 'contact#index'
+ get '/contact', to: 'contact#index'
+
+ get '/admin', to: 'photos#index'
 
  resources :photos, only: [:new, :create, :index, :destroy]
 
