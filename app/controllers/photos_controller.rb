@@ -24,6 +24,17 @@ class PhotosController < ApplicationController
     redirect_to root_path
   end
 
+  def return_animal_photos
+    @photos = Photos.find_by album: 'animals'
+  end
+
+  def return_nature_photos
+    @photos = Photos.find_by album: 'nature'
+  end
+
+  def return_wedding_photos
+    @photos = Photos.find_by album: 'weddings'
+  end
   private
 
   def photo_params

@@ -4,11 +4,11 @@ Rails.application.routes.draw do
 
  get '/about', to: 'about#about'
 
- get '/animals', to: 'animals#index'
+ get '/animals', to: 'photos#animals'
 
- get '/nature', to: 'nature#index'
+ get '/nature', to: 'photos#nature'
 
- get '/weddings', to: 'weddings#index'
+ get '/weddings', to: 'photos#weddings'
 
  get '/contact', to: 'contact#index'
 
